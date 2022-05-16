@@ -11,10 +11,10 @@
     
 
 
-    <div class="gallery-three-images">
+    <div class="gallery-three-images grid--1-col grid--3-col-tablet grid">
       
         {%- for block in section.blocks -%}
-            <a href="{{ block.settings.image | img_url: '1500x' }}" 
+            <a class="grid__item" href="{{ block.settings.image | img_url: '1500x' }}" 
             data-fancybox="single"
             data-src="{{ block.settings.image | img_url: '1500x' }}"
 >
@@ -23,9 +23,12 @@
             height="{{ block.settings.image.height }}" />
           </a>
         {%- endfor %}
-        <a href="" >
-            SEE MORE Jeverly IN INSTAGRAM
+        {% if template.name != 'index' %}
+        <a href="https://www.instagram.com/accounts/login/?next=/goldaevo_jewelry/" >
+          <img class="" src="{{ 'watchinst.png' | asset_url }}">
+            
         </a>
+      {% endif %}
     </div>
 
 </div>

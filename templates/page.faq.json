@@ -1,0 +1,47 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "164442576091e78f43": {
+      "type": "faq",
+      "blocks": {
+        "34a6d65e-3ae8-4185-b8f2-4019ca95320f": {
+          "type": "text",
+          "settings": {
+            "question": "dsfdfsdf",
+            "answer": "sdfsdfsd"
+          }
+        },
+        "ca0aa125-d5cc-43bd-b570-426fb8652f38": {
+          "type": "text",
+          "settings": {
+            "question": "dfsdf",
+            "answer": "sdfsdfs"
+          }
+        },
+        "f2ba7b34-a968-46be-aaa3-5d900e48fcb3": {
+          "type": "text",
+          "settings": {
+            "question": "sdfsdfsd",
+            "answer": "sdfsdf"
+          }
+        }
+      },
+      "block_order": [
+        "34a6d65e-3ae8-4185-b8f2-4019ca95320f",
+        "ca0aa125-d5cc-43bd-b570-426fb8652f38",
+        "f2ba7b34-a968-46be-aaa3-5d900e48fcb3"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164442576091e78f43"
+  ]
+}

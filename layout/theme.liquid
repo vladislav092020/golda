@@ -211,5 +211,17 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    
+    {% if template == 'index' %}
+    
+    <div class="popup" style="display:none;padding:15px; width:auto; z-index:9999; height:auto; position:fixed; bottom:50px; background:#fff;left:50px;border-radius:10px;border:1px solid #000;">
+    <a href="https://goldaevostore.myshopify.com/pages/calculation" style="color:#000; font-size:12px; text-decoration:none;"> <img src="{{"'customorder.png'| asset_url}}" style="width:200px;">
+     <br> 
+	Сlick here <br>
+	and get a free evaluation 
+    <br>of your product
+      </a>
+      </div>
+    {% endif %}
   </body>
 </html>

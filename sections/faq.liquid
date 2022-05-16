@@ -1,0 +1,159 @@
+<section class="section default faq page-width">
+    <div class="decor">
+      <div class="image">
+        <picture><img src="{{'decor.svg' | asset_url}}" alt="" /></picture>
+      </div>
+    </div>
+    <div class="container">
+      <div class="default_head">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="default_head-text" data-aos="fade-up" data-aos-delay="0">
+              <h1>{{section.settings.title}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="default_body">
+        <div class="accordion">
+            {% for block in section.blocks%}
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="{{forloop.index}}00">
+                <div class="accordion-item_head">
+                <h6>{{block.settings.question}}</h6>
+                <div class="icon icon-plus"></div>
+                </div>
+                <div class="accordion-item_body">
+                <div class="accordion-item_inner">
+                    <p>
+                   {{block.settings.answer}}
+                    </p>
+                </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+<style>
+  .default{
+    padding: 20px 0 20rem 0;
+  }
+  
+  .accordion {
+  position: relative;
+}
+  
+.accordion-item {
+  position: relative;
+  
+    border-bottom: 1px solid #000;
+
+}
+
+.accordion-item_head {
+  position: relative;
+  padding: 2.7rem 6rem 2.7rem 0;
+}
+.accordion-item_head:hover {
+  cursor: pointer;
+}
+.accordion-item_head h6 {
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+.accordion-item_head .icon {
+  --i-size: 3.2rem;
+  position: absolute;
+  right: 0;
+  top: 2.7rem;
+  transition: transform 1s ease-in-out;
+  transform: rotate(-0.5turn);
+}
+.accordion-item_body {
+  position: relative;
+  transition: height 0.3s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+.accordion-item_inner {
+  position: relative;
+  padding-bottom: 2.7rem;
+}
+.accordion-item.aos-animate .accordion-item_head .icon {
+  transform: rotate(0deg);
+}
+.accordion-item.active .accordion-item_head .icon {
+  transform: rotate(45deg);
+}
+  
+  
+  
+   .accordion-item_head h6 {
+    font-size: 1.8rem;
+  }
+  
+  
+</style>
+<script>
+  
+  var accordion = document.querySelector('.accordion');
+
+  if (accordion) {
+  	var accItems = document.querySelectorAll('.accordion-item');
+  	accItems.forEach(function (accItem) {
+  		if (accItem.classList.contains('active')) {
+  			accItem.querySelector('.accordion-item_body').style.height = accItem.querySelector('.accordion-item_inner').scrollHeight + 'px';
+  		}
+
+  		accItem.querySelector('.accordion-item_head').addEventListener('click', function (e) {
+  			if (accItem.classList.contains('active')) {
+  				accItem.classList.remove('active');
+  				accItem.querySelector('.accordion-item_body').style.height = 0;
+  				return;
+  			}
+
+  			accItem.classList.add('active');
+  			accItem.querySelector('.accordion-item_body').style.height = accItem.querySelector('.accordion-item_inner').scrollHeight + 'px';
+  		});
+  	});
+  }
+</script>
+
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+  {
+	"type": "text",
+	"id": "title",
+	"label": "Title"
+	}
+	],
+	"blocks": [
+    {
+        "type": "text",
+        "name": "Question Answer",
+        "settings" : [
+            {
+                "type": "text",
+                "id": "question",
+                "label": "Question"
+            },
+            {
+                "type": "text",
+                "id": "answer",
+                "label": "Answer"
+            }
+        ]
+       
+    }
+    ],
+  "presets": [
+    {
+        "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

@@ -30,10 +30,10 @@
         "f1306293-099f-4979-8942-164d1617d13d"
       ],
       "settings": {
-        "heading": "Look for a unique jewel with as rare gem?",
+        "heading": "Looking for a unique jewelry with a rare gem?",
         "heading2": "Heading",
-        "text": "Duis autem vel eum iriur dolor ihendrerit in vulputate velit esse",
-        "button_label_1": "SHOP GEMSTONE",
+        "text": "High quality fine jewelry at prices that are of unbeatable value",
+        "button_label_1": "SHOP GEMSTONES",
         "button_link_1": "shopify:\/\/collections",
         "button_style_secondary_1": false,
         "button_label_2": "",
@@ -63,7 +63,7 @@
           "settings": {
             "button_label": "LEARN MORE",
             "button_link": "shopify:\/\/collections\/all",
-            "page": "about-us"
+            "page": "gia-page"
           }
         }
       },
@@ -102,7 +102,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/3_79261c70-30a2-4b9f-a3ca-b6ad6f44edd7.png",
             "title": "",
-            "text": "<p>GOODS <\/p><p>SHIPPING<br\/>ACROSS<br\/><strong>1-2 DAYS<\/strong><\/p>",
+            "text": "<p>ALL ITEMS<\/p><p>SHIPPED IN<\/p><p><strong>1-2 DAYS<\/strong> <\/p><p><br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -112,7 +112,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_4be5623b-e8cd-40f5-ac64-29b545eb8bd2.png",
             "title": "",
-            "text": "<p>GOODS <br\/>RETURNED <br\/>WITHIN <br\/><strong>30 DAYS<\/strong><\/p>",
+            "text": "<p><strong>30 DAYS<\/strong><\/p><p>NO HASSLE<\/p><p>RETURNS <\/p><p><br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -139,7 +139,7 @@
       "settings": {
         "title": "Products",
         "collection": "frontpage",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
@@ -214,7 +214,7 @@
           "type": "heading",
           "settings": {
             "heading": "Image with text",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "1641886928a85e6c82-1": {
@@ -255,14 +255,14 @@
         "16402756461c1425b5-0": {
           "type": "heading",
           "settings": {
-            "heading": "Dolor sit amet",
+            "heading": "Unbeatable value",
             "heading_size": "h1"
           }
         },
         "16402756461c1425b5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut lenim ad minim veniam, quis nostrud exerci tation commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.                                   . <\/p>",
+            "text": "<p>All jewelry are designed, hand – crafted and GIA certified in New York. There is no middlemen, no wholesalers or any third party involved. We have direct access to the global loose diamond and colored stones market enabling us to offer you huge savings in comparison to a high street jewelers. We don’t have high overheads associated with a jewelry retail shop and hence are able to offer you beautiful handcrafted and high quality diamond jewelry at prices that are of unbeatable value. On average, our products are 50% less than the high street. Our aim is quite simple; to help you get the best value for your budget.<\/p>",
             "text_style": "body"
           }
         },
@@ -298,14 +298,14 @@
         "1640280364b75da692-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Craftsmenship",
+            "heading_size": "h0"
           }
         },
         "1640280364b75da692-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Jewelers spend countless hours designing breathtaking timepieces. World-leading craftsmen specialized in sculptural goldsmithing, gem setting and hand engraving use the highest level of perfection to elevate the beauty of every Goldaevo masterpiece into a timeless work of art. <\/p>",
             "text_style": "body"
           }
         },
@@ -363,19 +363,19 @@
         "33aa6ff0-6801-47de-b0c5-6abb3d1c216f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "90b750cf-6e50-488d-965a-f796c881b063": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "1e10b565-365c-4a42-a20e-423c008232b3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "ae879616-6a54-47b2-8123-6f738c9c082a": {
@@ -406,7 +406,7 @@
         "7c296812-0c3f-49f6-a91d-e0ef984f592d"
       ],
       "settings": {
-        "title": "Gallery Three"
+        "title": "Our recent creations"
       }
     },
     "164232264984f3d0ab": {
@@ -467,7 +467,7 @@
         "e78e0c8e-a73f-4e17-b6d0-dcbc40105b7e"
       ],
       "settings": {
-        "title": "Video"
+        "title": "Watch play of colors"
       }
     },
     "164232270058b907b5": {
@@ -497,68 +497,244 @@
         "05a06200-2e6b-4773-8f71-34cbd4df4b9c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.jpg",
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/14k.webp",
+            "title": "Etsy customer",
+            "date": "",
+            "text": "<p>Roman was super friendly! He's very kind & attentive, from consulting, designing to manufacturing, confirming shipment details. There was trouble in shipment, & he had to ship 3 times, but still very kind & checking with me on delivery status. Moreover, I loveeeee the ring, the stone, the accomplishment, soooo fancy 🥰🥰 My best & most loved order so far. Strongly recommend Goldaevo & definitely will purchase again if I have a chance. Thanks a lot!!!!!!<\/p>"
           }
         },
         "8d7f7c49-25dd-4d03-9c8f-8ab903851c79": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.jpg",
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/14k_e6f39d71-66a1-46ab-bd97-3228c4ced0f1.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Excellent company who went out of their way to help! My ring got in just in time as promised and it is stunning! The Emerald is much better in person!<\/p>"
           }
         },
         "deb34a09-855f-425a-948a-5ef20d698f76": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5.jpg",
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/14k_68f262cb-2161-4db3-82aa-2fd34e4893f6.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Доброго дня. Кольца шикарные, мне очень понравились . Спасибо !<\/p>"
           }
         },
         "261a3548-116b-4174-992c-32b2255c8f90": {
           "type": "column",
           "settings": {
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k.webp",
+            "title": "Etsy customer",
+            "date": "",
+            "text": "<p>This tanzanite ring is stunning! It’s so beautiful! It came with GIA certificate. Shipping very fast, Everything just perfect.<br\/><br\/><\/p>"
           }
         },
         "a28995ea-7597-4fb3-ab4e-c2842e41fc9d": {
           "type": "column",
           "settings": {
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/aaa_14k.webp",
+            "title": "Etsy customer",
+            "date": "",
+            "text": "<p>Honestly Roman is excellent to work with ! I was wearing my ring within 12 days of ordering it ! I highly recommend GOLDAEVO ! I am beyond words from the stunning beauty of my 6.91 Tanzanite! Thank you so very much !<\/p>"
           }
         },
         "8ab3bed0-a075-4365-86f5-f4aa9ea96b6b": {
           "type": "column",
           "settings": {
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/iap_300x300.2495270923_6dyadq11.webp",
+            "title": "Etsy customer",
+            "date": "",
+            "text": "<p>It is stunning! Great quality and beautiful stone (with GIA). The entire process communicating with the seller is great. From selecting stone, quote, design to production, everything is professional and effective. First time dealing with the store, I can tell they are truly honest,trusted and professional. definitely beyond the price! Thanks again!<\/p>"
           }
         },
         "c2a4c933-3739-4d31-96a2-7c7dc96840f3": {
           "type": "column",
           "settings": {
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/14k_0afa7a42-59c9-4e5c-9c2d-e9eda6c74b9b.webp",
+            "title": "Etsy customer",
+            "date": "",
+            "text": "<p>Gorgeous!!! Really beautifully crafted. Exactly as I wanted. Custom paraiba tourmaline rose gold diamond ring. Extremely quick production and shipment overseas. Would purchase again!<br\/><br\/><\/p>"
           }
         },
         "9a3edf3e-7a6a-4803-9a3b-8ad68ca65fea": {
           "type": "column",
           "settings": {
-            "title": "First Last name",
-            "date": "From Etsy",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>"
+            "image": "shopify:\/\/shop_images\/14k_175d2469-0e8d-44e3-9a0b-52f42524b5e8.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Beautiful ring. I think my wife is going to love it. The price tag is the best over the internet! <\/p>"
+          }
+        },
+        "13de3dad-bdab-4a78-982d-b490e84c25cf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14k_8de39274-e7af-47c6-ba03-86986821822e.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Perfect condition. Accurate description. Well packed. Shipped fast. Very pleased. Would happily buy from this seller again.<\/p>"
+          }
+        },
+        "571838f6-7c7a-4111-b528-fcc206012057": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14k_f60529a3-6961-4cd6-87c7-a44e167c3da0.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Killer ring thank you! This is my second head turner ring from Goldaevo!<\/p>"
+          }
+        },
+        "9d55a003-befe-4493-98f6-9aca2be9114f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_14k.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Really love the pendant. Great quality gemstones and superb craftsmanship. Price and value are the best! GIA certified!<\/p>"
+          }
+        },
+        "c7315302-c170-4319-baec-e0a5d18e7d46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_14k_e738296a-4f57-4f38-9698-602b1863205c.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>A wonderful ruby ring with great play of color... My wife is happy! THANK YOU<br\/><\/p>"
+          }
+        },
+        "2cae6f3a-d6d6-47cb-af70-82e0b5ae638b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aaa_aaaa_14k.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>OMG!! ITS even MORE breath taking!! Pics did not do this piece justice.❤ it GIA certified! WOW<br\/><\/p>"
+          }
+        },
+        "f08a1a9a-bccb-4fca-8584-1b9e204ff6bb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_1fa328e1-39ff-455c-8d00-8d368b626c6e.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Apologize for not rating sooner . Pretty pendant. Diamonds very nice quality. Thank you for the appraisals.<\/p>"
+          }
+        },
+        "f66483ec-272c-427c-b2ab-2d29ce70e3dd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_d692924c-b3dc-4809-b3b7-8dddbca6b3d2.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Satisfied with appraisal quality and accuracy - independently validated it. A+ Great quality!<br\/><\/p>"
+          }
+        },
+        "b3f12dce-9f55-4d00-871b-3cd55e69c5a7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_16707709-fc4f-477d-80f5-c95db4d20b34.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>A++ GOING QUALITY AT A BEST  PRICE FOR PARAIBA! I'm glad I chose this seller<\/p>"
+          }
+        },
+        "03b4758e-db04-44e1-9302-fe7d574be43a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_c71986ef-b7c3-42de-90ee-b9088d7e91c7.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Seller uses very high quality diamonds n paraiba. Very satisfied. Thanks<\/p>"
+          }
+        },
+        "5451bc84-2e49-4576-91e9-0aa76b08e334": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_669aa165-d9fc-4077-a431-2e88ba4594fc.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Lovely. I like it, and so do all my family and friends. Green paraiba is what i was looking for!<br\/><\/p>"
+          }
+        },
+        "0a41090d-c479-42eb-9113-c4b3143735a5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_3e747d51-7b18-4661-80d4-1c0773adcb95.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Beautiful earrings. The paraiba are gorgeous. They do have a lot of inclusions but ok. All my collectible masterpieces from Goldaevo! Thank you guys!<br\/><\/p>"
+          }
+        },
+        "5d11fe90-1c4f-4e39-b5c0-7aed52f57512": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_ca20d8b9-40b7-449c-8584-a8a1a6e349ff.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Super fast delivery!! I love my ring!! I love this seller! Great deals. 10 🌟<\/p>"
+          }
+        },
+        "13ebab7f-9604-4319-958e-e58f2c092368": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_547932d4-3167-4dee-ac45-85f1b68e1534.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Love Love Love the stone and the whole design of pendant. GIA certification! Thank you!!<br\/><\/p>"
+          }
+        },
+        "dbc85241-3fd3-4e2e-8a91-7d40b7ec6e1a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_984953c6-1b8b-469b-8a90-802937e03229.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>The ring is breath taking! Tsavorite is super clean! Communication with seller was quick and easy!<br\/><\/p>"
+          }
+        },
+        "e63dab58-a226-4d62-b215-4cd4bbe2f71d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_4ab48c73-4e87-4e89-b776-315b672be7cc.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Exquisite, impressive size and beautifully cut, I’m thrilled. The Tanzanite is super clean and bright! Fast shipping. <br\/><\/p>"
+          }
+        },
+        "bbc9a671-ac4b-4878-9939-f2b59e4ac687": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_901044dc-c36d-42b0-a193-ed80ce246bf8.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Wow this is such an amazingly beautiful paraiba great Seller Highly recommended. The item came with GIA certificate!<br\/><\/p>"
+          }
+        },
+        "aa5332fc-de4f-411a-ba64-3eb2d9a7d399": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_a1dbf891-4b9a-4028-85ad-4a22478fc8e4.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Beautiful ring. Just as described.Perfectly resized. Thank you.<br\/><\/p>"
+          }
+        },
+        "755c1436-d868-4abf-bfd7-bfaae56f7b4f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_fe3d1343-783a-4a2b-ac83-a71410943db1.webp",
+            "title": "Web site customer",
+            "date": "",
+            "text": "<p>Fast shipping despite COVID-19. Beautiful ruby as described. Would come back.thx<br\/><\/p>"
+          }
+        },
+        "d1fb51e6-8927-4208-ac95-59c559f2e2a1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gia_igi_egl_18k_14k_3d2a61c6-e7af-49cd-8c83-c88d7c1b8bf7.webp",
+            "title": "Ebay customer",
+            "date": "",
+            "text": "<p>Totally beautiful ring in every way. MY daughter is very satisfied with it. Our third ring from this company! Best value for the money!<br\/><\/p>"
           }
         }
       },
@@ -570,10 +746,29 @@
         "a28995ea-7597-4fb3-ab4e-c2842e41fc9d",
         "8ab3bed0-a075-4365-86f5-f4aa9ea96b6b",
         "c2a4c933-3739-4d31-96a2-7c7dc96840f3",
-        "9a3edf3e-7a6a-4803-9a3b-8ad68ca65fea"
+        "9a3edf3e-7a6a-4803-9a3b-8ad68ca65fea",
+        "13de3dad-bdab-4a78-982d-b490e84c25cf",
+        "571838f6-7c7a-4111-b528-fcc206012057",
+        "9d55a003-befe-4493-98f6-9aca2be9114f",
+        "c7315302-c170-4319-baec-e0a5d18e7d46",
+        "2cae6f3a-d6d6-47cb-af70-82e0b5ae638b",
+        "f08a1a9a-bccb-4fca-8584-1b9e204ff6bb",
+        "f66483ec-272c-427c-b2ab-2d29ce70e3dd",
+        "b3f12dce-9f55-4d00-871b-3cd55e69c5a7",
+        "03b4758e-db04-44e1-9302-fe7d574be43a",
+        "5451bc84-2e49-4576-91e9-0aa76b08e334",
+        "0a41090d-c479-42eb-9113-c4b3143735a5",
+        "5d11fe90-1c4f-4e39-b5c0-7aed52f57512",
+        "13ebab7f-9604-4319-958e-e58f2c092368",
+        "dbc85241-3fd3-4e2e-8a91-7d40b7ec6e1a",
+        "e63dab58-a226-4d62-b215-4cd4bbe2f71d",
+        "bbc9a671-ac4b-4878-9939-f2b59e4ac687",
+        "aa5332fc-de4f-411a-ba64-3eb2d9a7d399",
+        "755c1436-d868-4abf-bfd7-bfaae56f7b4f",
+        "d1fb51e6-8927-4208-ac95-59c559f2e2a1"
       ],
       "settings": {
-        "title": "Reviews",
+        "title": "Happy customers",
         "total": "",
         "num": "",
         "numq": ""

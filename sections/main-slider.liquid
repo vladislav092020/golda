@@ -73,7 +73,7 @@ margin-bottom:30px;
 #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > h2{
   margin-top:0px;
 }
-#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div{
+.banner__container{
   padding-right:260px;
 }
 
@@ -84,7 +84,7 @@ margin-bottom:30px;
 #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div > div.banner__buttons{
   margin-top:6px;
 }
-#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft.animated > div{
+.banner__precontainer{
   padding:0px 20px;
   padding-left: 90px;
   padding-left: 90px;
@@ -112,7 +112,7 @@ margin-bottom:30px;
     #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div{
       padding:20px;
     }
-    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft.animated > div{
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div{
       padding:0;
       margin:0;
     }
@@ -136,8 +136,8 @@ margin-bottom:30px;
       <h2 class="banner__heading red" {{ block.shopify_attributes }}>
         <span>Designer and manufacturer of <br>fine gemstone jewerly</span>
       </h2>
-      <div class="" style="background: #ebdfda;">
-        <div class="">
+      <div class="banner__precontainer" style="background: #ebdfda;">
+        <div class="banner__container">
           <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
             <span>{{ section.settings.heading | escape }}</span>
           </h2>
@@ -156,7 +156,7 @@ margin-bottom:30px;
         </div>
       </div>
       </div>
-      <div class="grid__item wow animate__fadeIn">
+      <div class="grid__item">
         <div class="swiper">
         <div class="swiper-wrapper">
 

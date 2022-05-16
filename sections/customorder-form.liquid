@@ -1,11 +1,27 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-<div class="contact page-width page-width--narrow spaced-section">
+<div class="contact page-width  spaced-section">
+  
+  <div class="grid--2-col-tablet grid--1-col  grid">
+  
+  
+  <div class="grid__item">
+  	<div style="position: sticky; top: 200px;">
+    <img src="{{ 'customorder.png' |asset_url}}">
+  </div>
+  </div>
+   
+  <div class="grid__item">
   <h2 class="title"></h2>
+    <div class="formorder">
   {%- form 'contact', id: 'ContactForm' -%}
     {%- if form.posted_successfully? -%}
-      <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
-    {%- elsif form.errors -%}
+     
+      <script>
+      window.location = "/pages/thank-you";
+      </script>
+		
+       {%- elsif form.errors -%}
       <div class="form__message">
         <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
       </div>
@@ -18,19 +34,15 @@
       </ul>
     {%- endif -%}
     
-      <div class="field">
-        <label class="field__label" for="ContactForm-name">Your Name</label>
-        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-        
-      </div>
+     
       
       <div class="field">
         <label class="field__label" for="ContactForm-phone">Jewerly type</label>
         <div class="imagecont">
-          <input type="radio" name="jewerlytype" value="Ring" id="Ring"> <label for="Ring" > <img src="{{'ring.png'|asset_url}}">Ring</label>
-            <input type="radio" name="jewerlytype" value="Pendant" id="Pendant"> <label for="Pendant"><img src="{{'pendant.png'|asset_url}}">Pendant</label>
-            <input type="radio" name="jewerlytype" value="Bracelet" id="Bracelet"> <label for="Bracelet"><img src="{{'bracelet.png'|asset_url}}">Bracelet</label>
-            <input type="radio" name="jewerlytype" value="Earrings" id="Earrings"> <label for="Earrings"><img src="{{'earrings.png'|asset_url}}">Earrings </label>
+          <input type="radio" name="contact[jewerlytype]"  value="Ring" id="Ring"> <label for="Ring" > <img src="{{'ring.png'|asset_url}}">Ring</label>
+            <input type="radio" name="contact[jewerlytype]" value="Pendant" id="Pendant"> <label for="Pendant"><img src="{{'pendant.png'|asset_url}}">Pendant</label>
+            <input type="radio" name="contact[jewerlytype]" value="Bracelet" id="Bracelet"> <label for="Bracelet"><img src="{{'bracelet.png'|asset_url}}">Bracelet</label>
+            <input type="radio" name="contact[jewerlytype]" value="Earrings" id="Earrings"> <label for="Earrings"><img src="{{'earrings.png'|asset_url}}">Earrings </label>
           </div>
         </div>
       <div class="field">
@@ -38,31 +50,33 @@
         
         <div class="imagecont">
           
-          <input type="radio" name="centerstone" value="Tanzanite" id="Tanzanite" ><label for="Tanzanite"><img src=" {{'Tanzanite.jpg'|asset_url}}">Tanzanite </label>
-          <input type="radio" name="centerstone" value="Sapphire" id="Sapphire" ><label for="Sapphire"><img src=" {{'Sapphire.jpg'|asset_url}}">Sapphire (Heated)</label>
-          <input type="radio" name="centerstone" value="Opal" id="Opal" ><label for="Opal"><img src=" {{'Opal.png'|asset_url}}">Opal </label>
-          <input type="radio" name="centerstone" value="Ruby" id="Ruby" ><label for="Ruby"><img src=" {{'Ruby.jpg'|asset_url}}">Ruby (Heated Burma)</label>
-         
-          <input type="radio" name="centerstone" value="Tsavorite" id="Tsavorite" ><label for="Tsavorite"><img src=" {{'tsavorite.jpg'|asset_url}}">Tsavorite</label>
-          <input type="radio" name="centerstone" value="Emerald" id="Emerald" ><label for="Emerald"><img src="{{'Emerald.jpg' |  asset_url}}">Emerald (Faceted Zambian)</label>
-          <input type="radio" name="centerstone" value="Paraiba Tourmaline (Blue)" id="Paraiba Tourmaline (Blue)" ><label for="Paraiba Tourmaline (Blue)"><img src=" {{'Paraibablue.jpg'|asset_url}}">Paraiba Tourmaline (Blue)</label>
-          <input type="radio" name="centerstone" value="Paraiba Tourmaline (Green)" id="Paraiba Tourmaline (Green)" ><label for="Paraiba Tourmaline (Green)"><img src=" {{'Paraibagreen.jpg'|asset_url}}">Paraiba Tourmaline (Green)</label>
+          <input type="radio" name="contact[centerstone]" value="Tanzanite" id="Tanzanite" ><label for="Tanzanite"><img src=" {{'Tanzanite.jpg'|asset_url}}">Tanzanite </label>
+          <input type="radio" name="contact[centerstone]" value="Sapphire" id="Sapphire" ><label for="Sapphire"><img src=" {{'Sapphire.jpg'|asset_url}}">Sapphire</label>
+          <input type="radio" name="contact[centerstone]" value="Ruby" id="Ruby" ><label for="Ruby"><img src=" {{'Ruby.jpg'|asset_url}}">Ruby </label>
+           <input type="radio" name="contact[centerstone]" value="Opal" id="Opal" ><label for="Opal"><img src=" {{'Opal.png'|asset_url}}">Opal </label> 
+        </div><div class="imagecont"> 
+        <input type="radio" name="contact[centerstone]" value="Emerald" id="Emerald" ><label for="Emerald"><img src="{{'Emerald.jpg' |  asset_url}}">Emerald </label>
+          <input type="radio" name="contact[centerstone]" value="Tsavorite" id="Tsavorite" ><label for="Tsavorite"><img src=" {{'tsavorite.jpg'|asset_url}}">Tsavorite</label>
+          <input type="radio" name="contact[centerstone]" value="Paraiba Tourmaline (Blue)" id="Paraiba Tourmaline (Blue)" ><label for="Paraiba Tourmaline (Blue)"><img src=" {{'Paraibablue.jpg'|asset_url}}">Paraiba  (Blue)</label>
+          <input type="radio" name="contact[centerstone]" value="Paraiba Tourmaline (Green)" id="Paraiba Tourmaline (Green)" ><label for="Paraiba Tourmaline (Green)"><img src=" {{'Paraibagreen.jpg'|asset_url}}">Paraiba  (Green)</label>
         
        </div>
       </div>
       <div class="field">
         <label class="field__label" for="ContactForm-phone">Center stone shape</label>
         <div class="imagecont">  
-        
+         <input type="radio" name="contact[centerstoneshape]" id="Round" value="Round"><label for="Round"><img src="{{'round.png'|asset_url}}">Round</label>
+          <input type="radio" name="contact[centerstoneshape]" id="Pear" value="Pear"><label for="Pear"><img src="{{'pear.png'|asset_url}}">Pear</label>
+           
           
-          <input type="radio" name="centerstoneshape" id="Oval" value="Oval"><label for="Oval"><img src="{{'oval.png'|asset_url}}">Oval</label>
-            <input type="radio" name="centerstoneshape" id="Cushion" value="Cushion"><label for="Cushion"><img src="{{'cuchion.png'|asset_url}}">Cushion</label>
-            <input type="radio" name="centerstoneshape" id="heart" value="heart"><label for="heart"><img src="{{'heart.png'|asset_url}}">Heart </label>
-            <input type="radio" name="centerstoneshape" id="Round" value="Round"><label for="Round"><img src="{{'round.png'|asset_url}}">Round</label>
-            <input type="radio" name="centerstoneshape" id="octagonal" value="octagonal"><label for="octagonal"><img src="{{'octagonal.png'|asset_url}}">Octagonal</label>
-            <input type="radio" name="centerstoneshape" id="Triangle" value="Triangle"> <label for="Triangle"><img src="{{'triangle.png'|asset_url}}">Triangle</label>
-            <input type="radio" name="centerstoneshape" id="Pear" value="Pear"><label for="Pear"><img src="{{'pear.png'|asset_url}}">Pear</label>
-            <input type="radio" name="centerstoneshape" id="Marquise" value="Marquise"><label for="Marquise"><img src="{{'marquize.png'|asset_url}}">Marquise</label>
+          <input type="radio" name="contact[centerstoneshape]" id="Oval" value="Oval"><label for="Oval"><img src="{{'oval.png'|asset_url}}">Oval</label>
+            <input type="radio" name="contact[centerstoneshape]" id="Cushion" value="Cushion"><label for="Cushion"><img src="{{'cuchion.png'|asset_url}}">Cushion</label>
+            </div><div class="imagecont">   
+          <input type="radio" name="contact[centerstoneshape]" id="octagonal" value="octagonal"><label for="octagonal"><img src="{{'octagonal.png'|asset_url}}">Octagonal</label>
+             <input type="radio" name="contact[centerstoneshape]" id="Marquise" value="Marquise"><label for="Marquise"><img src="{{'marquize.png'|asset_url}}">Marquise</label>
+        <input type="radio" name="contact[centerstoneshape]" id="Triangle" value="Triangle"> <label for="Triangle"><img src="{{'triangle.png'|asset_url}}">Triangle</label>
+              
+        <input type="radio" name="contact[centerstoneshape]" id="heart" value="heart"><label for="heart"><img src="{{'heart.png'|asset_url}}">Heart </label>
               
           </div>
          
@@ -142,7 +156,7 @@
 
 
         
-        <input id="amount" type="hidden">
+        <input id="amount" name="contact[centerstoneweight]" type="hidden">
        
           
          
@@ -173,12 +187,18 @@
         <label class="field__label" for="ContactForm-phone">Center Stone quality</label>
         <div id="slider-range-max1"></div>
         
-          <input id="amount1" type="hidden">
+          <input id="amount1" name="contact[centerstonequality]" type="hidden">
           <div class="slider-scale" style="counter-reset: section -1;">
             <div class="slider-scale-tick slider-scale-big" data-label="Good"></div>
             <div class="slider-scale-tick"></div>  
+            <div class="slider-scale-tick"></div> 
+            <div class="slider-scale-tick"></div>
+            <div class="slider-scale-tick"></div> 
             <div class="slider-scale-tick slider-scale-big" data-label="Medium"></div>
             <div class="slider-scale-tick"></div>  
+            <div class="slider-scale-tick"></div> 
+            <div class="slider-scale-tick"></div> 
+            <div class="slider-scale-tick"></div> 
             <div class="slider-scale-tick slider-scale-big" data-label="Excelent"></div>
           </div>
         <!--  <datalist id="tickmarks">
@@ -192,7 +212,7 @@
           $( function() {
             $( "#slider-range-max1" ).slider({
               min:0,
-              max:2,
+              max:10,
               step:1,
              
               slide: function( event, ui ) {
@@ -211,13 +231,14 @@
         <div class="imagecont"> 
         
           
-          <input type="radio" name="metaltype"   id="14yel" value="14k Yellow Gold"><label for="14yel">14k Yellow Gold</label>
-          <input type="radio" name="metaltype"   id="18yel" value="18k Yellow Gold"><label for="18yel">18k Yellow Gold</label>
-          <input type="radio" name="metaltype"   id="14white" value="14k White Gold"><label for="14white">14k White Gold</label>
-          <input type="radio" name="metaltype"   id="18white" value="18k White Gold"><label for="18white">18k White Gold</label>
-          <input type="radio" name="metaltype"  id="14ros"  value="14k Rose Gold"><label for="14ros">14k Rose Gold</label>
-          <input type="radio" name="metaltype"   id="1ros" value="18k Rose Gold"><label for="1ros">18k Rose Gold</label>
-          <input type="radio" name="metaltype"   id="plat" value="Platinum"><label for="plat">Platinum</label>
+          <input type="radio" name="contact[metaltype]"   id="14yel" value="14k Yellow Gold"><label for="14yel"><img src="{{"yellowgold.png"| asset_url}}">14k Yellow Gold</label>
+          <input type="radio" name="contact[metaltype]"   id="14white" value="14k White Gold"><label for="14white"><img src="{{"whitegold.png"| asset_url}}">14k White Gold</label>
+          <input type="radio" name="contact[metaltype]"  id="14ros"  value="14k Rose Gold"><label for="14ros"><img src="{{"rosegold.png"| asset_url}}">14k Rose Gold</label><br>
+        </div><div class="imagecont"> 
+          <input type="radio" name="contact[metaltype]"   id="18yel" value="18k Yellow Gold"><label for="18yel"><img src="{{"yellowgold.png"| asset_url}}">18k Yellow Gold</label>
+          <input type="radio" name="contact[metaltype]"   id="18white" value="18k White Gold"><label for="18white"><img src="{{"whitegold.png"| asset_url}}">18k White Gold</label>
+          <input type="radio" name="contact[metaltype]"   id="1ros" value="18k Rose Gold"><label for="1ros"><img src="{{"rosegold.png"| asset_url}}">18k Rose Gold</label>
+          <input type="radio" name="contact[metaltype]"   id="plat" value="Platinum"><label for="plat"><img src="{{"whitegold.png"| asset_url}}">Platinum</label>
         
         
         </div>
@@ -225,21 +246,20 @@
       <div class="field">
         <label class="field__label" for="ContactForm-phone">Certficaton</label>
        <div class="imagecont"> 
-         <input type="radio" name="certificate"id="GIA" value="GIA" ><label for="GIA"><img src="{{"GIA.png"| asset_url}}">GIA</label>
-        <input type="radio" name="certificate" id="AIG" value="AIG" ><label for="AIG"><img src="{{"AIG.png"| asset_url}}">AIG</label>
-       <input type="radio" name="certificate" id="AIGS" value="AIGS"><label for="AIGS"><img src="{{"AIGS.png"| asset_url}}">AIGS</label>
-       <input type="radio" name="certificate" id="FAA Appraisal" value="FAA Appraisal"><label for="FAA Appraisal"><img src="{{"FAAA.png"| asset_url}}">FAA Appraisal</label>
-       <input type="radio" name="certificate" id="none" value="none"><label for="none"><img src="{{"none.png"| asset_url}}">none</label>
-      </div> 
+         <input type="radio" name="contact[certificate]"id="GIA" value="GIA"  ><label style="width:23%;" for="GIA"><img src="{{"GIA.png"| asset_url}}"></label>
+        <input type="radio" name="contact[certificate]" id="AIG" value="AIG"  ><label style="width:23%;" for="AIG"><img src="{{"AIG.png"| asset_url}}"></label>
+       <input type="radio" name="contact[certificate]" id="AIGS" value="AIGS" ><label style="width:23%;" for="AIGS"><img src="{{"AIGS.png"| asset_url}}"></label>
+       <input type="radio" name="contact[certificate]" id="FAA Appraisal" value="FAA Appraisal" ><label style="width:23%;" for="FAA Appraisal"><img src="{{"FAAA.png"| asset_url}}"></label>
+        </div> 
       </div>
 
 
       
    
-    <div class="field">
+  <!--  <div class="field">
       <label class="field__label" for="ContactForm-phone">Average budget for custom order  (USD)</label>
-      <input type="text" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Average budget for custom order  (USD)">
-    </div>
+      <input type="text" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[budget]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Average budget for custom order  (USD)">
+    </div>-->
     
     <div class="field">
       <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
@@ -286,18 +306,58 @@
       </button>
     </div>
   {%- endform -%}
+      
 </div>
+    </div>
+    </div>
+  </div>
 <style>
+  
+  
+  .formorder{
+  	border:1px solid #000;
+    border-radius:10px;
+    padding: 42px 32px 10px;
+  }
+  
+  .formorder .field{
+  	border-bottom:1px solid #000;
+    padding-bottom:30px;
+    margin-bottom:30px;
+  }
+  
+  .field__label{
+  	text-align:left;
+    padding-bottom:20px;
+  }
+  .formorder label:hover{
+  	border:1px solid #000;
+    border-radius:10px;
+  }
+  
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+  background:#000;
+  }
   
   label{
     display: block;
-    width:25%;
+    width:20%;
     border:1px solid rgba(0,0,0,0)
+  }
+  
+  @media(max-width:767px){
+  
+  label{
+    width:50%;
+  }
+  
   }
 
   .imagecont{
   display: flex;
-  
+    justify-content:space-between;
+    margin-bottom: 20px;
+
   flex-wrap: wrap;
   }
   .imagecont input{
@@ -306,7 +366,9 @@
 
   .imagecont input[type=radio]:checked+label{
     border:1px solid rgba(0,0,0,1);
+    border-radius:10px;
   }
+  
   .imagecont label{
     padding: 5px;
     
@@ -317,7 +379,7 @@
   label img{
     display: block;
     width: 100%;
-    height: 80%;
+    
   }
 
   label input{

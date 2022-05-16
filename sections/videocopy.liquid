@@ -80,11 +80,18 @@
         </deferred-media>
       </div>
     {% endfor %}
-    <div class="grid__item">
-      <a href="">See More Jeverly ON INSTAGRAM</a>
+    {% if template.name != 'index' %}
+    <div class="grid__item" style="flex-grow:0;">
+      <a href="https://www.youtube.com/channel/UCVUVDU2WBqekd9EP7d-USIQ/videos" style="
+    max-width: 100%;
+">
+        <img class="" src="{{ 'watchyoutube.png' | asset_url }}" style=" display: block;
+    width: 100%;">
+        </a>
       
      
     </div>
+    {% endif %}
   </div>
 </div>
 

@@ -11,19 +11,19 @@
         "e11aea35-a843-4078-a5b5-98acc91d0255": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "b5c87f8f-7671-4df9-847f-f6d986bcb002": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "b7c800b1-c757-46d0-9f39-952f8aca2ba8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.jpg"
+            "image": "shopify:\/\/shop_images\/aquamarine_pendant_gold_white_14k_natural_hude_big_size_on_neck_pear_cut_gia_certified_Copy_Copy.jpg"
           }
         },
         "b1fc293e-a6d2-4b4a-bf15-aa6020f88eb6": {
@@ -43,6 +43,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1.jpg"
           }
+        },
+        "885092bf-ec5b-4753-b92f-d2a8084acf3e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -51,7 +57,8 @@
         "b7c800b1-c757-46d0-9f39-952f8aca2ba8",
         "b1fc293e-a6d2-4b4a-bf15-aa6020f88eb6",
         "f52c58ea-ea79-49da-9427-e39755f4263f",
-        "3afd8eb1-f5e6-4162-9ba7-05c23790e065"
+        "3afd8eb1-f5e6-4162-9ba7-05c23790e065",
+        "885092bf-ec5b-4753-b92f-d2a8084acf3e"
       ],
       "settings": {
         "title": ""

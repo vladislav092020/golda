@@ -21,6 +21,10 @@
     margin-top: 0;
   }
 }
+.product__info-container iframe{
+     max-width:100%;
+  }
+
 
 @media screen and (min-width: 750px) {
   .product--thumbnail .product__media-gallery,
@@ -31,6 +35,8 @@
     top: 3rem;
     z-index: 2;
   }
+  
+  
 
   .product__info-wrapper {
     padding-left: 5rem;
