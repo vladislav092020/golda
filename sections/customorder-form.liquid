@@ -1,0 +1,350 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+<div class="contact page-width page-width--narrow spaced-section">
+  <h2 class="title"></h2>
+  {%- form 'contact', id: 'ContactForm' -%}
+    {%- if form.posted_successfully? -%}
+      <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+    {%- elsif form.errors -%}
+      <div class="form__message">
+        <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+      </div>
+      <ul class="form-status-list caption-large" role="list">
+        <li>
+          <a href="#ContactForm-email" class="link">
+            {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+          </a>
+        </li>
+      </ul>
+    {%- endif -%}
+    
+      <div class="field">
+        <label class="field__label" for="ContactForm-name">Your Name</label>
+        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+        
+      </div>
+      
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Jewerly type</label>
+        <div class="imagecont">
+          <input type="radio" name="jewerlytype" value="Ring" id="Ring"> <label for="Ring" > <img src="{{'ring.png'|asset_url}}">Ring</label>
+            <input type="radio" name="jewerlytype" value="Pendant" id="Pendant"> <label for="Pendant"><img src="{{'pendant.png'|asset_url}}">Pendant</label>
+            <input type="radio" name="jewerlytype" value="Bracelet" id="Bracelet"> <label for="Bracelet"><img src="{{'bracelet.png'|asset_url}}">Bracelet</label>
+            <input type="radio" name="jewerlytype" value="Earrings" id="Earrings"> <label for="Earrings"><img src="{{'earrings.png'|asset_url}}">Earrings </label>
+          </div>
+        </div>
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Center Stone</label>
+        
+        <div class="imagecont">
+          
+          <input type="radio" name="centerstone" value="Tanzanite" id="Tanzanite" ><label for="Tanzanite"><img src=" {{'Tanzanite.jpg'|asset_url}}">Tanzanite </label>
+          <input type="radio" name="centerstone" value="Sapphire" id="Sapphire" ><label for="Sapphire"><img src=" {{'Sapphire.jpg'|asset_url}}">Sapphire (Heated)</label>
+          <input type="radio" name="centerstone" value="Opal" id="Opal" ><label for="Opal"><img src=" {{'Opal.png'|asset_url}}">Opal </label>
+          <input type="radio" name="centerstone" value="Ruby" id="Ruby" ><label for="Ruby"><img src=" {{'Ruby.jpg'|asset_url}}">Ruby (Heated Burma)</label>
+         
+          <input type="radio" name="centerstone" value="Tsavorite" id="Tsavorite" ><label for="Tsavorite"><img src=" {{'tsavorite.jpg'|asset_url}}">Tsavorite</label>
+          <input type="radio" name="centerstone" value="Emerald" id="Emerald" ><label for="Emerald"><img src="{{'Emerald.jpg' |  asset_url}}">Emerald (Faceted Zambian)</label>
+          <input type="radio" name="centerstone" value="Paraiba Tourmaline (Blue)" id="Paraiba Tourmaline (Blue)" ><label for="Paraiba Tourmaline (Blue)"><img src=" {{'Paraibablue.jpg'|asset_url}}">Paraiba Tourmaline (Blue)</label>
+          <input type="radio" name="centerstone" value="Paraiba Tourmaline (Green)" id="Paraiba Tourmaline (Green)" ><label for="Paraiba Tourmaline (Green)"><img src=" {{'Paraibagreen.jpg'|asset_url}}">Paraiba Tourmaline (Green)</label>
+        
+       </div>
+      </div>
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Center stone shape</label>
+        <div class="imagecont">  
+        
+          
+          <input type="radio" name="centerstoneshape" id="Oval" value="Oval"><label for="Oval"><img src="{{'oval.png'|asset_url}}">Oval</label>
+            <input type="radio" name="centerstoneshape" id="Cushion" value="Cushion"><label for="Cushion"><img src="{{'cuchion.png'|asset_url}}">Cushion</label>
+            <input type="radio" name="centerstoneshape" id="heart" value="heart"><label for="heart"><img src="{{'heart.png'|asset_url}}">Heart </label>
+            <input type="radio" name="centerstoneshape" id="Round" value="Round"><label for="Round"><img src="{{'round.png'|asset_url}}">Round</label>
+            <input type="radio" name="centerstoneshape" id="octagonal" value="octagonal"><label for="octagonal"><img src="{{'octagonal.png'|asset_url}}">Octagonal</label>
+            <input type="radio" name="centerstoneshape" id="Triangle" value="Triangle"> <label for="Triangle"><img src="{{'triangle.png'|asset_url}}">Triangle</label>
+            <input type="radio" name="centerstoneshape" id="Pear" value="Pear"><label for="Pear"><img src="{{'pear.png'|asset_url}}">Pear</label>
+            <input type="radio" name="centerstoneshape" id="Marquise" value="Marquise"><label for="Marquise"><img src="{{'marquize.png'|asset_url}}">Marquise</label>
+              
+          </div>
+         
+      </div>
+      
+      <div class="field">
+        
+        <label class="field__label" for="ContactForm-phone">Center Stone Weight</label>
+        <div id="slider-range-max"></div>
+        <div class="slider-scale" style="counter-reset: section -1;">
+          <div class="slider-scale-tick slider-scale-big" data-label="0"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big" data-label="3"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big" data-label="6"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big" data-label="9"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big" data-label="12"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>
+          <div class="slider-scale-tick slider-scale-big"></div>
+          <div class="slider-scale-tick"></div>         
+          <div class="slider-scale-tick slider-scale-big" data-label="15"></div>
+        </div>
+
+        <style>
+          .slider-scale {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 40px;
+	position: relative;
+}
+.slider-scale-tick {
+  display: block!important;
+	position: relative;
+}
+.slider-scale-tick:before {
+	content: "";
+	border-left: 1px solid #677680;
+	display: block;
+	position: absolute;
+	height: 5px;
+}
+.slider-scale-big:before {
+	height: 10px;
+}
+.slider-scale-tick:after {
+	top: 10px;
+	counter-increment: section;
+	content: attr(data-label);
+	transform: translateX(-50%);
+	text-align: center;
+	position: absolute;
+}
+        </style>
+
+
+
+        
+        <input id="amount" type="hidden">
+       
+          
+         
+
+        <!--  <datalist id="tickmarks">
+            <option value="1-3ct"  label="1-3ct">1-3ct
+            <option value="4-6ct" label="4-6ct">4-6ct
+            <option value="7-10ct" label="7-10ct">7-10ct
+            <option value="11-15ct" label="11-15ct">11-15ct
+            <option value="15-30ct" label="15-30ct">15-30ct
+        </datalist>-->
+        <script>
+          $( function() {
+            $( "#slider-range-max" ).slider({
+              min:0,
+              max:15,
+              step:0.5,
+              slide: function( event, ui ) {
+                $( "#amount" ).val( ui.value );
+              }
+            });
+            $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+          } );
+          </script>
+        </div>  
+      
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Center Stone quality</label>
+        <div id="slider-range-max1"></div>
+        
+          <input id="amount1" type="hidden">
+          <div class="slider-scale" style="counter-reset: section -1;">
+            <div class="slider-scale-tick slider-scale-big" data-label="Good"></div>
+            <div class="slider-scale-tick"></div>  
+            <div class="slider-scale-tick slider-scale-big" data-label="Medium"></div>
+            <div class="slider-scale-tick"></div>  
+            <div class="slider-scale-tick slider-scale-big" data-label="Excelent"></div>
+          </div>
+        <!--  <datalist id="tickmarks">
+          
+          <option value="Good" label="Good" >
+          <option value="Medium" label="Medium" >
+          <option value="Excelent" label="Excelent" >
+      
+        </datalist> -->
+        <script>
+          $( function() {
+            $( "#slider-range-max1" ).slider({
+              min:0,
+              max:2,
+              step:1,
+             
+              slide: function( event, ui ) {
+                $( "#amount1" ).val( ui.value );
+              }
+            });
+            $('.ui-corner').after(val( $( "#slider-range-max1" ).slider( "value" ) ));
+            $( "#amount1" ).val( $( "#slider-range-max1" ).slider( "value" ) );
+          } );
+          </script>
+      
+    </div>
+
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Metal type</label>
+        <div class="imagecont"> 
+        
+          
+          <input type="radio" name="metaltype"   id="14yel" value="14k Yellow Gold"><label for="14yel">14k Yellow Gold</label>
+          <input type="radio" name="metaltype"   id="18yel" value="18k Yellow Gold"><label for="18yel">18k Yellow Gold</label>
+          <input type="radio" name="metaltype"   id="14white" value="14k White Gold"><label for="14white">14k White Gold</label>
+          <input type="radio" name="metaltype"   id="18white" value="18k White Gold"><label for="18white">18k White Gold</label>
+          <input type="radio" name="metaltype"  id="14ros"  value="14k Rose Gold"><label for="14ros">14k Rose Gold</label>
+          <input type="radio" name="metaltype"   id="1ros" value="18k Rose Gold"><label for="1ros">18k Rose Gold</label>
+          <input type="radio" name="metaltype"   id="plat" value="Platinum"><label for="plat">Platinum</label>
+        
+        
+        </div>
+      </div>
+      <div class="field">
+        <label class="field__label" for="ContactForm-phone">Certficaton</label>
+       <div class="imagecont"> 
+         <input type="radio" name="certificate"id="GIA" value="GIA" ><label for="GIA"><img src="{{"GIA.png"| asset_url}}">GIA</label>
+        <input type="radio" name="certificate" id="AIG" value="AIG" ><label for="AIG"><img src="{{"AIG.png"| asset_url}}">AIG</label>
+       <input type="radio" name="certificate" id="AIGS" value="AIGS"><label for="AIGS"><img src="{{"AIGS.png"| asset_url}}">AIGS</label>
+       <input type="radio" name="certificate" id="FAA Appraisal" value="FAA Appraisal"><label for="FAA Appraisal"><img src="{{"FAAA.png"| asset_url}}">FAA Appraisal</label>
+       <input type="radio" name="certificate" id="none" value="none"><label for="none"><img src="{{"none.png"| asset_url}}">none</label>
+      </div> 
+      </div>
+
+
+      
+   
+    <div class="field">
+      <label class="field__label" for="ContactForm-phone">Average budget for custom order  (USD)</label>
+      <input type="text" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Average budget for custom order  (USD)">
+    </div>
+    
+    <div class="field">
+      <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+      <textarea
+        rows="10"
+        id="ContactForm-body"
+        class="text-area field__input"
+        name="contact[{{ 'templates.contact.form.comment' | t }}]"
+        placeholder=" Add comments"
+      >
+        {{- form.body -}}
+      </textarea>
+      
+    </div>
+    <div class="field field--with-error">
+      <label class="field__label" for="ContactForm-email">Your Email <span aria-hidden="true">*</span></label>
+      <input
+        autocomplete="email"
+        type="email"
+        id="ContactForm-email"
+        class="field__input"
+        name="contact[email]"
+        spellcheck="false"
+        autocapitalize="off"
+        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="ContactForm-email-error"
+        {% endif %}
+        placeholder="Your Email"
+      >
+      
+      {%- if form.errors contains 'email' -%}
+        <small class="contact__field-error" id="ContactForm-email-error">
+          <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+          <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+        </small>
+      {%- endif -%}
+    </div>
+    <div class="contact__button">
+      <button type="submit" class="button">
+        SUBMIT
+      </button>
+    </div>
+  {%- endform -%}
+</div>
+<style>
+  
+  label{
+    display: block;
+    width:25%;
+    border:1px solid rgba(0,0,0,0)
+  }
+
+  .imagecont{
+  display: flex;
+  
+  flex-wrap: wrap;
+  }
+  .imagecont input{
+    display: none;
+  }
+
+  .imagecont input[type=radio]:checked+label{
+    border:1px solid rgba(0,0,0,1);
+  }
+  .imagecont label{
+    padding: 5px;
+    
+    text-align: center;
+    
+    text-align: center;
+  }
+  label img{
+    display: block;
+    width: 100%;
+    height: 80%;
+  }
+
+  label input{
+    display: none;
+    
+  }
+  .ui-slider{
+    width: 100%;
+  }
+</style>
+{% schema %}
+{
+  "name": "Custom Form",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

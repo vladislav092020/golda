@@ -1,0 +1,201 @@
+
+
+
+<style>
+  .review__body .review__text p:first-child:before{
+    content:'';
+    position: relative; 
+    display: block;
+    background-image: url("{{'coma.svg' | asset_url}}");
+    width: 102px;
+    height: 80px;
+    z-index: 0;
+    position: absolute;
+    top: -155px;
+    right: -70px;
+}
+   
+
+ 
+  .review__body .review__text p{
+    z-index: 9999999;
+    display: inline-block;
+    position: relative;
+  }
+</style>
+<section class="section reviews reviews-default" id="reviews"  data-aos="fade-up">
+  <div class="page-width">
+      <div class="reviews__head">
+          <h2 class="h5">{{section.settings.title}}</h2>
+          
+          
+      </div>
+      <div class="reviews__body" >
+          <div class="swiper-container" id="reviews-slider">
+              <div class="swiper-wrapper">
+                  {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                          <div class="review">
+                              <div class="review__head">
+                                  <div class="review__img">
+                                    {% if block.settings.image != blank %}
+                                      <img src="{{block.settings.image | img_url: 'master'}}">
+                                    {% endif %}
+                                  </div>
+                                  
+                                  <div class="review__name" style="text-align: center; text-transform:uppercase;">
+                                    {{ block.settings.title | escape }}
+                                  </div>
+                                  
+                              </div>
+                              <div class="review__body">
+                                  <div class="review__text">
+                                    <p> {{ block.settings.text }}</p> 
+                                  </div>
+                              </div>
+                              <div class="review__link">
+                                {% if block.settings.sel_image == 'ebay' %}
+                                <img src="{{'ebayseller.png' | asset_url}}" style="width:100px; height:auto;">
+                                {% else %}
+                                <img src="{{'etsyseller.png' | asset_url}}" style="width:100px; height:auto;">
+                                {% endif %}
+                                
+                              </div>
+                          </div>
+                    </div>
+                  {% endfor %}
+                      
+                  
+              </div>
+          </div>
+          <div class="swiper-buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+      </div>
+     
+   
+
+{% schema %}
+  {
+    "name": "Reviews",
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "total",
+      "default": "5.0",
+      "label": "Total"
+    },
+    {
+      "type": "text",
+      "id": "num",
+      "default": "123",
+      "label": "Num"
+    },
+    {
+      "type": "text",
+      "id": "numq",
+      "default": "32",
+      "label": "NumQuestion"
+    }],
+ "blocks": [
+    {
+      "type": "column",
+      "name": "Rewiev Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "First Last name",
+          "label": "Name"
+        },
+		{
+          "type": "text",
+          "id": "date",
+          "default": "8/18/21",
+          "label": "Date"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+        }
+      ]
+    }
+  ],
+"presets": [
+    {
+      "name": "Rewievs"
+      
+    }
+  ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+.reviews__body{
+  position:relative;
+}
+.swiper-wrapper{
+  position:relative;
+}
+.review__img img{
+  width:100%;
+}
+
+{% endstylesheet %}
+
+<script>
+const swiperr = new Swiper('#reviews-slider', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay:true,
+
+  breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>

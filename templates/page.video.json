@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1642003661a5a7ba3a": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/11.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
+    },
+    "16420036823dcc16b5": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/33.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
+    },
+    "1642003676a2d88d63": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/22.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
+    },
+    "1642881075c7558f67": {
+      "type": "videocopy",
+      "blocks": {
+        "6d78fc64-d960-47b8-871c-1b37ac98190e": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/11.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "91bf4744-e7cb-4dfc-b84e-2f1a52b5020a": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/22.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "0c6e8d00-517d-4e08-9137-6c321848cae2": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/33.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "fa52d128-c2b6-45ba-ba94-f4df0904f7a1": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/22.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "c56508e4-11a7-4cc3-8bf8-7ab2a8fe810b": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/22.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "7d6be85a-483d-4b79-9cab-ac328c51a4eb": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "d16e333d-b161-4b61-9f13-0991c67087bc": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "834a9da8-2734-40fe-b804-b787e8f12cf5": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        },
+        "9bb75f66-178e-4341-84fb-dd839067a3c7": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false
+          }
+        }
+      },
+      "block_order": [
+        "6d78fc64-d960-47b8-871c-1b37ac98190e",
+        "91bf4744-e7cb-4dfc-b84e-2f1a52b5020a",
+        "0c6e8d00-517d-4e08-9137-6c321848cae2",
+        "fa52d128-c2b6-45ba-ba94-f4df0904f7a1",
+        "c56508e4-11a7-4cc3-8bf8-7ab2a8fe810b",
+        "7d6be85a-483d-4b79-9cab-ac328c51a4eb",
+        "d16e333d-b161-4b61-9f13-0991c67087bc",
+        "834a9da8-2734-40fe-b804-b787e8f12cf5",
+        "9bb75f66-178e-4341-84fb-dd839067a3c7"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1642003661a5a7ba3a",
+    "16420036823dcc16b5",
+    "1642003676a2d88d63",
+    "1642881075c7558f67"
+  ]
+}

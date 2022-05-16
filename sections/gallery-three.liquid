@@ -1,0 +1,161 @@
+
+<div class="page-width gallery-three">
+
+
+
+    <h2 class="image-with-text__heading h1">
+
+        {{section.settings.title}}
+
+    </h2>
+    
+
+
+    <div class="gallery-three-images">
+      
+        {%- for block in section.blocks -%}
+            <a href="{{ block.settings.image | img_url: '1500x' }}" 
+            data-fancybox="single"
+            data-src="{{ block.settings.image | img_url: '1500x' }}"
+>
+            <img class="" src="{{ block.settings.image | img_url: '1500x' }}"  
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}" />
+          </a>
+        {%- endfor %}
+        <a href="" >
+            SEE MORE Jeverly IN INSTAGRAM
+        </a>
+    </div>
+
+</div>
+
+
+
+{%style%}
+
+    .gallery-three-images{
+
+        display:flex;
+
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+       
+
+    }
+    .gallery-three-images a{
+      
+      margin-bottom: 10px;
+      width: calc(33% - 7px);
+    }
+    .gallery-three img{
+        cursor:pointer;
+        width:100%;
+       
+    }
+
+    @media(max-width:767px){
+    
+      .gallery-three-images a{
+      width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endstyle%}
+
+
+
+
+
+{% schema %}
+
+{
+
+    "name": "Gallery Three",
+
+    "settings": [{
+
+        "type": "text",
+
+        "id": "title",
+
+        "label": "Title",
+
+        "default": "Gallery Three"
+
+    }],
+
+    "blocks" : [{
+
+        "type": "image",
+
+        "name": "Image",
+
+        "settings" :[
+
+            {
+
+                "type": "image_picker",
+
+                "id": "image",
+
+                "label": "Image"
+
+            }
+
+        ]
+
+
+
+    }],
+
+   "presets" : [
+
+       {
+
+           "category": "Gallery Three",
+
+           "name":"Gallery Three"
+
+       }
+
+   ]
+
+}
+
+{% endschema %}

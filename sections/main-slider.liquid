@@ -1,0 +1,282 @@
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+
+  .main-slider .banner__heading.red{
+    font-family:'proximanovasb';
+    font-size:20px;
+    text-transform:uppercase;
+    color:#cb9274;
+    text-align:right;
+    padding: 20px;
+    padding-right: 50px;
+  }
+
+  .main-slider{
+    background:#f6f4f2;
+  }
+
+
+  .main-slider img{
+    width:100%;
+    height:auto;
+  }
+
+  .main-slider .banner__heading{
+    font-size:49px;
+    font-family:'bodonyit';
+    
+  }
+  #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1){
+    padding-left:50px;
+    padding-bottomm:60px;
+  }
+  #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1) > div > div > h2{
+    margin-left: -150px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__fadeInUp > div > div > div.banner__text{
+    font-size:22px;
+    margin-bottom:20px;
+  }
+
+  #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__fadeInUp{
+    padding:50px 0px;
+  }
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__fadeInUp > div > div > div.banner__buttons{
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__fadeInUp > div > div > div.banner__buttons{
+  margin-top: 35px;
+}
+	#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__fadeInUp > div > div > div.banner__buttons > a{
+margin:0 auto;
+margin-bottom:30px;
+}
+
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > h2{
+  margin-top:0px;
+}
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div{
+  padding-right:260px;
+}
+
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div {
+  padding-bottom:50px;
+}
+
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div > div.banner__buttons{
+  margin-top:6px;
+}
+#shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft.animated > div{
+  padding:0px 20px;
+  padding-left: 90px;
+  padding-left: 90px;
+  margin-right: -250px;
+  padding-bottom: 50px;
+}
+
+  @media(max-width:767px){
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div{
+      flex-wrap:wrap;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(2) > div > img{
+      width:100%;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(2){
+      order:0;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1){
+      order:1;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div{
+      padding:50px 0px;
+    }
+
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft > div > div{
+      padding:20px;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div.grid__item.wow.animate__.animate__fadeInLeft.animated > div{
+      padding:0;
+      margin:0;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1) > div > div > h2{
+      margin-left:0px;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1){
+      padding-left:0px;
+    }
+    #shopify-section-template--15510279094509__1642080941b980c9a5 > div > div > div:nth-child(1) > div > div > h2{
+      font-size:28px;
+    }
+  }
+
+
+{%- endstyle -%}
+
+<div class="page-width" >
+  <div class="grid--2-col-tablet grid--1-col  grid">
+    <div class="grid__item wow animate__animated animate__fadeInLeft ">
+      <h2 class="banner__heading red" {{ block.shopify_attributes }}>
+        <span>Designer and manufacturer of <br>fine gemstone jewerly</span>
+      </h2>
+      <div class="" style="background: #ebdfda;">
+        <div class="">
+          <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+            <span>{{ section.settings.heading | escape }}</span>
+          </h2>
+          <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <span>{{section.settings.text | escape }}</span>
+          </div>
+          <div class="banner__buttons{% if section.settings.button_label_1 != blank and section.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ section.shopify_attributes }}>
+            {%- if section.settings.button_label_1 != blank -%}
+              <a{% if section.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_1 | escape }}</a>
+            {%- endif -%}
+            {%- if section.settings.button_label_2 != blank -%}
+              <a{% if section.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_2 | escape }}</a>
+            {%- endif -%}
+          </div>
+          
+        </div>
+      </div>
+      </div>
+      <div class="grid__item wow animate__fadeIn">
+        <div class="swiper">
+        <div class="swiper-wrapper">
+
+          {%- for block in section.blocks -%}
+          <img class="swiper-slide"
+            srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+              {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+              {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+              {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
+              {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+              {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
+              {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
+              {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
+              {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}
+              {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+            sizes="{% if block.settings.image_2 != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
+            src="{{ section.settings.image | img_url: '1500x' }}"
+            loading="lazy"
+            alt="{{ block.settings.image.alt | escape }}"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
+            {% if block.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
+          >
+          {%- endfor -%}
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: true,
+  loop: true,
+  effect: "fade",
+  autoHeight: true,
+ 
+
+  
+
+ 
+});
+</script>
+{% schema %}
+{
+  "name": "Main Slider",
+  "tag": "section",
+  "class": "main-slider",
+  "settings": [
+  {
+    "type": "text",
+    "id": "heading",
+    "default": "Heading",
+    "label": "Heading1"
+  },
+  {
+    "type": "text",
+    "id": "heading2",
+    "default": "Heading",
+    "label": "Heading2"
+  },
+  {
+    "type": "text",
+    "id": "text",
+    "default": "text",
+    "label": "text"
+  },
+  {
+    "type": "text",
+    "id": "button_label_1",
+    "default": "Button label",
+    "label": "button_label_1",
+    "info": "button_label_1"
+  },
+  {
+    "type": "url",
+    "id": "button_link_1",
+    "label": "button_link_1"
+  },
+  {
+    "type": "checkbox",
+    "id": "button_style_secondary_1",
+    "default": false,
+    "label": "button_style_secondary_1"
+  },
+  {
+    "type": "text",
+    "id": "button_label_2",
+    "label": "button_label_2",
+    "info": "button_label_2"
+  },
+  {
+    "type": "url",
+    "id": "button_link_2",
+    "label": "button_link_2"
+  },
+  {
+    "type": "checkbox",
+    "id": "button_style_secondary_2",
+    "default": false,
+    "label": "button_style_secondary_2"
+  }
+  ],
+  "blocks" : [{
+    "type" : "Slide",
+    "name" : "Slide",
+    "settings" : [{
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    }
+    ]
+  }],  
+  "presets": [
+    {
+      "name": "Main Slider",
+      "blocks": [
+       
+      ]
+    }
+  ]
+}
+{% endschema %}
