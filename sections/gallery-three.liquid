@@ -1,164 +1,58 @@
-
 <div class="page-width gallery-three">
+  <h2 class="image-with-text__heading h1">
+    {{ section.settings.title }}
+  </h2>
+  <div class="gallery-three-images grid--1-col grid--3-col-tablet grid">
+    {% assign limit = 6%}
 
+    {% if tempate.name != 'index' %} {% assign limit = 100 %} {% endif %}
 
-
-    <h2 class="image-with-text__heading h1">
-
-        {{section.settings.title}}
-
-    </h2>
-    
-
-
-    <div class="gallery-three-images grid--1-col grid--3-col-tablet grid">
-      
-        {%- for block in section.blocks -%}
-            <a class="grid__item" href="{{ block.settings.image | img_url: '1500x' }}" 
-            data-fancybox="single"
-            data-src="{{ block.settings.image | img_url: '1500x' }}"
->
-            <img class="" src="{{ block.settings.image | img_url: '1500x' }}"  
-            width="{{ block.settings.image.width }}"
-            height="{{ block.settings.image.height }}" />
-          </a>
-        {%- endfor %}
-        {% if template.name != 'index' %}
-        <a href="https://www.instagram.com/accounts/login/?next=/goldaevo_jewelry/" >
-          <img class="" src="{{ 'watchinst.png' | asset_url }}">
-            
-        </a>
-      {% endif %}
-    </div>
-
+    {%- for block in section.blocks  limit: limit  -%}
+    <a
+      class="grid__item galleryItem"
+      data-group="{{ section.id }}"
+      href="{{ block.settings.image | img_url: '1500x' }}"
+    >
+      <img
+        class=""
+        src="{{ block.settings.image | img_url: '1500x' }}"
+      />
+    </a>
+    {%- endfor %} {% if template.name != 'index' %}
+    <a href="https://www.instagram.com/accounts/login/?next=/goldaevo_jewelry/">
+      <img class="" src="{{ 'watchinst.png' | asset_url }}" />
+    </a>
+    {% endif %}
+  </div>
 </div>
 
-
-
-{%style%}
-
-    .gallery-three-images{
-
-        display:flex;
-
-        flex-wrap: wrap;
-
-        justify-content: space-between;
-
-       
-
-    }
-    .gallery-three-images a{
-      
-      margin-bottom: 10px;
-      width: calc(33% - 7px);
-    }
-    .gallery-three img{
-        cursor:pointer;
-        width:100%;
-       
-    }
-
-    @media(max-width:767px){
-    
-      .gallery-three-images a{
-      width:100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{%style%} .gallery-three-images{ display:flex; flex-wrap: wrap; justify-content:
+space-between; } .gallery-three-images a{ margin-bottom: 10px; width: calc(33% -
+7px); } .gallery-three img{ cursor:pointer; width:100%; }
+@media(max-width:767px){ .gallery-three-images a{ width:100%; } } 
 {%endstyle%}
 
-
-
-
-
-{% schema %}
-
+{% schema %} {
+     "name": "Gallery Three", "settings": [
+     {
+     "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Gallery Three" 
+    }], 
+    "blocks" : [{ 
+      "type": "image",
+     "name": "Image",
+        "settings" :[ 
 {
-
-    "name": "Gallery Three",
-
-    "settings": [{
-
-        "type": "text",
-
-        "id": "title",
-
-        "label": "Title",
-
-        "default": "Gallery Three"
-
-    }],
-
-    "blocks" : [{
-
-        "type": "image",
-
-        "name": "Image",
-
-        "settings" :[
-
-            {
-
-                "type": "image_picker",
-
-                "id": "image",
-
-                "label": "Image"
-
-            }
-
-        ]
-
-
-
-    }],
-
-   "presets" : [
-
-       {
-
-           "category": "Gallery Three",
-
-           "name":"Gallery Three"
-
-       }
-
-   ]
-
-}
-
-{% endschema %}
+     "type": "image_picker",
+      "id": "image",
+    "label": "Image" 
+} ] 
+}], 
+    "presets" : [ 
+    {
+    "category": "Gallery Three",
+    "name":"Gallery Three" 
+    } ] 
+} {% endschema %}
